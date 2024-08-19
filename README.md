@@ -1,79 +1,20 @@
-# Elbrus Bootcamp Vite bundle
+# Self CV
 
-## React + Typescript + ESLint + Prettier
+CV for self-presentation
 
-Современный быстрый сборщик React проекта на Typescript с предустановленными настройками ESLint и Prettier от Elbrus Bootcamp.
+## docker ops 
 
-## Использование
+Build, install and run:
 
-```
-npx degit Elbrus-Bootcamp/vite-react-ts my-app
+`docker-compose up --build -d`
 
-cd my-app
+Stop:
 
-npm i
-```
+`docker-compose down`
 
-## Скрипты
+Restart:
 
-- Запустить в режиме разработки
+`docker-compose up -d --force-recreate`
 
-```
-npm run dev
-```
 
-- Собрать проект
-
-```
-npm run build
-```
-
-- Превью
-
-```
-npm run preview
-```
-
-## `ENV`
-
-Для подключения переменных окружения нужно описать их в файле `.env` в корне. Переменные окружения можно получить из объекта `import.meta.env`. Чтобы Typescript подсказывал, какими переменными окружения можно пользоваться, их нужно прописать в файле `src/env.d.ts`. Только переменные с префиксом `VITE_` передаются на клиент.
-
-## `settings.json`
-
-Чтобы настроить форматирование и линтование по сохранению, необходимо прописать в `settings.json` (ctrl + shift + P) следующие настройки:
-
-```json
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
-```
-
-Можно добавить форматирование Prettier для JS и React:
-
-```json
-{
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
-}
-```
-
-При работе не из корневой директории необходимо настроить CWD для ESLint:
-
-```json
-{
-  "eslint.workingDirectories": [
-    { "directory": "./client", "changeProcessCWD": true },
-    { "directory": "./server", "changeProcessCWD": true }
-  ]
-}
-```
-
-Если директория не `client` или `server`, то можно добавить соответствующую строчку в данный массив.
+> Do not forget to drop node_modules volume if something goes wrong on install new npm packages with `docker-compose down -v`
