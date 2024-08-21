@@ -1,10 +1,8 @@
-import Layout from '@/app/layout';
 import React from 'react';
-
+import  '../app/globals.scss'
 export default function MainPage(): JSX.Element {
   return (
-    <Layout>
-      <div>
+      <div className='root'>
       <h2>Общий опыт работы Frontend разработччиком - более 3.5 лет</h2>
       <h3>
         Более двух лет работал в компании Tribune, которая разрабатывает приложение для организации
@@ -54,6 +52,6 @@ export default function MainPage(): JSX.Element {
 
 Увлекаюсь походами в горы, LARP (Live Action Role PlayGame),сам ставил несколько ролевых игр, а также историей и психологией.</p>
 </div>
-    </Layout>
+
   )
 }

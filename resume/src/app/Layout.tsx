@@ -1,18 +1,18 @@
+import React from 'react';
+import "./globals.scss"; // Можно оставить здесь, если стили глобальны
 
-import "./globals.scss"; 
-
-
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
-      <body className={`root`}>
-        {children}
-      </body>
-    </html>
+    <div className="root">
+      <header>
+        
+      </header>
+      <main>{children}</main>
+      <footer>
+      
+      </footer>
+    </div>
   );
-}
+};
+
+export default Layout;
