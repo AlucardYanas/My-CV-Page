@@ -1,7 +1,8 @@
+import Layout from '@/app/layout';
 import React from 'react';
 
 export default function Portfolio(): JSX.Element {
   return (
-    <div>Portfolio</div>
+    <Layout><div>Portfolio</div></Layout>
   );
 }
