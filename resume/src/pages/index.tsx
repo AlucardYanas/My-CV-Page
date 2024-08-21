@@ -1,8 +1,9 @@
 import React from 'react';
-import  '../app/globals.scss'
+import styles from '../styles/main.module.scss';
+
 export default function MainPage(): JSX.Element {
   return (
-      <div className='root'>
+    <div className={styles.root}>
       <h2>Общий опыт работы Frontend разработччиком - более 3.5 лет</h2>
       <h3>
         Более двух лет работал в компании Tribune, которая разрабатывает приложение для организации
