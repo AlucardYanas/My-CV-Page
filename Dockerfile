@@ -2,7 +2,8 @@ FROM node:20-alpine AS base
 RUN npm install pnpm@latest -g --silent
 
 WORKDIR /opt/app
-COPY package*.json /opt/app/
+COPY package.json /opt/app/
+COPY pnpm-lock.yaml /opt/app/
 RUN pnpm install
 
 FROM base AS dev

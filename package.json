@@ -15,7 +15,6 @@
     "sass": "^1.77.8"
   },
   "devDependencies": {
-    "@elbrus/eslint-config": "^1.0.0",
     "@eslint/js": "^9.9.0",
     "@types/node": "^20.16.1",
     "@types/react": "^18.3.4",
