@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/portfolio.scss';
+import Layout from '@/app/components/Layout';
 
 
 export default function Portfolio() {
@@ -25,6 +26,7 @@ export default function Portfolio() {
   ];
 
   return (
+    <Layout>
     <div className="portfolio">
       <h1>Мое Портфолио</h1>
       <div className="projects">
@@ -46,5 +48,6 @@ export default function Portfolio() {
         ))}
       </div>
     </div>
+    </Layout>
   );
 }

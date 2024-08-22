@@ -10,7 +10,7 @@ export default function Header(): JSX.Element {
           <Link href="/">Главная</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/portfolio">Портфолио</Link>
+          <Link href="/Portfolio">Портфолио</Link>
         </li>
       </ul>
     </nav>
