@@ -1,5 +1,4 @@
 .footer {
-  position: sticky;
   bottom: 0;
   background-color: #333;
   color: white;
@@ -8,6 +7,7 @@
   flex-shrink: 0;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  border-radius: 5px;
 
   p {
     margin: 5px 0;

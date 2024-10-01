@@ -3,18 +3,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif; // Замена на шрифт Serif
+  line-height: 1.6; // Линия для четкости
+  color: #333;
 }
 
 body {
@@ -27,20 +18,10 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: lightblue;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
   background-color: #f4f4f4;
+  max-width: 1200px; // Изменение ширины контейнера
+  margin: 0 auto;
+  padding: 40px; // Увеличенные отступы
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }

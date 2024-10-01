@@ -1,19 +1,15 @@
 module.exports = {
   parser: '@typescript-eslint/parser', 
   extends: [
-    'airbnb',
-    'airbnb/hooks',
-    'airbnb-typescript', 
-    'plugin:@typescript-eslint/recommended', // Рекомендуемые правила для TypeScript
+    'plugin:@typescript-eslint/recommended', 
   ],
   parserOptions: {
+    project: './tsconfig.eslint.json', 
     ecmaVersion: 2020,
     sourceType: 'module',
-    project: './tsconfig.json', 
   },
   rules: {
-    
-    'react/react-in-jsx-scope': 'off', // Отключение правила, поскольку React 17+ не требует импорта React
+    'react/react-in-jsx-scope': 'off', 
   },
   settings: {
     react: {

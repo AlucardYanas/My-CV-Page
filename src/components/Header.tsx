@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../../styles/Header.module.scss';
+import styles from '../styles/header.module.scss';
 
 export default function Header(): JSX.Element {
   return (
@@ -16,5 +16,3 @@ export default function Header(): JSX.Element {
     </nav>
   );
 };
-
-

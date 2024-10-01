@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/main.module.scss';
-import Layout from '../app/components/Layout';
+import Layout from '../components/Layout';
 
 export default function MainPage(): JSX.Element {
   return (
